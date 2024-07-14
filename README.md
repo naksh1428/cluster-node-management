@@ -35,11 +35,13 @@ cluster-node-management/
     Dockerfile
     docker-compose.yaml
     requirenments.txt
+    REDME.md
     kubectl/
+    
          deployemnt.yaml
          service.yaml
       
-    REDME.md
+    
 
 - `main.py` : FastAPI CRUD operation
 - `tests/test_main.py`: Contains the pytest test cases for the FastAPI application.
