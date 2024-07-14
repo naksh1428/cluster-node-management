@@ -1,0 +1,41 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: cluster-node-api-deployment
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: cluster-node-api
+  template:
+    metadata:
+      labels:
+        app: cluster-node-api
+    spec:
+      containers:
+      - name: cluster-node-api
+        image: dummy2
+        ports:
+          - containerPort: 8000
+        imagePullPolicy: Never
+        env:
+          - name: DB_PASSWORD
+            value: root123456789
+        resources:
+          limits:
+            memory: "256Mi"
+            cpu: "500m"
+      - name: cluster-node-mysql
+        image: mysql:8.0
+        ports:
+          - containerPort: 3306
+        env:
+          - name: MYSQL_USER
+            value: root
+          - name: MYSQL_ROOT_PASSWORD
+            value: root123456789
+          - name: MYSQL_PASSWORD
+            value: root123456789
+          - name: MYSQL_DATABASE
+            value: user_db
+
