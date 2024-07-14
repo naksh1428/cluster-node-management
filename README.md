@@ -38,7 +38,7 @@ cluster-node-management/
     REDME.md
     kubectl/
     
-         deployemnt.yaml
+         deployment.yaml
          service.yaml
       
     
