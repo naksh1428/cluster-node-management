@@ -14,6 +14,8 @@
 3. mysql 8.0 Community installed
 4. Docker
 5. Docker Compose
+6. kubectl
+7. minikube
 
 
 
@@ -33,6 +35,10 @@ cluster-node-management/
     Dockerfile
     docker-compose.yaml
     requirenments.txt
+    kubectl/
+         deployemnt.yaml
+         service.yaml
+      
     REDME.md
 
 - `main.py` : FastAPI CRUD operation
