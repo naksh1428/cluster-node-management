@@ -63,7 +63,6 @@ create docker Image:
 
 Created 2 files deployment.yaml and service.yaml
 
-Created 2 files deployment.yaml and service.yaml
 - `deployment.yaml` : 
 
 The first part of the file will configure the application pods and the resources of  deployed application. 
@@ -78,19 +77,21 @@ Minikube will assign an External IP address to the Kubernetes Service.
 It will enable us to access the deployed Fast API application
 
 create docker Image:
-        `command` : 
+
+
+          `command` : 
                     docker build -t  <image-name> .
     
 
 
-         `command` : 
+           `command` : 
                     kubectl apply -f .
 
 
 - `Few kubernetes important commands ` :
-        kubectl get deployment
-        kubectl get service
-        minikube service <service_name>
+                 kubectl get deployment
+                 kubectl get service
+                 minikube service <service_name>
 
 
 ## API Endpoints
