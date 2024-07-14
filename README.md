@@ -55,10 +55,6 @@ It will run the pytest within docker container.
 The command will build Image and run container, will the start the application on http://localhost:8000.
 
 2 Deploy Project using kubernetes(minikube) (attempted)
-
-create docker Image:
-        `command` : 
-                    docker build -t  <image-name> .
     
 
 Created 2 files deployment.yaml and service.yaml
